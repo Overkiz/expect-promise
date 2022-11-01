@@ -1,0 +1,14 @@
+local expect = require('expect')
+local busted = require('busted')
+require('expect-promise')(expect)
+expect.parameters.throw = busted.fail
+expect.parameters.promise = {
+  next = 'thenCall'
+}
+
+return {
+  default = {
+    ['auto-insulate'] = false,
+    lpath = './?.lua;' .. (require('lfs').currentdir()) .. '/?.lua;'
+  }
+}
