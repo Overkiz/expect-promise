@@ -40,5 +40,5 @@ jobs:
 
     - name: Test
       run: |
-        luarocks lint expect-promise-dev-1.rockspec
+        luarocks lint expect-promise-0.1-1.rockspec
         luarocks test
