@@ -1,5 +1,6 @@
 local Expect = require('expect.Expect')
 local FailureMessage = require('expect.FailureMessage')
+local Utils = require("expect.Utils")
 
 -- Compatibility trick
 local unpack = unpack or table.unpack
@@ -12,7 +13,7 @@ return function(expect)
 
   local function ensurePromise(controlData)
     local fnName = (expect.parameters.promise and expect.parameters.promise.next) or 'next'
-    controlData:assert(type(controlData.actual) == 'table' and type(controlData.actual[fnName]) == 'function',
+    controlData:assert(type(controlData.actual) == 'table' and Utils.isCallable(controlData.actual[fnName]),
       FailureMessage('expected {#} to be a promise'), nil, 2)
   end
 
