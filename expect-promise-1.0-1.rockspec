@@ -1,6 +1,6 @@
 rockspec_format = "3.0"
 package = "expect-promise"
-version = "dev-1"
+version = "1.0-1"
 description = {
   summary = "expect package plugin for promises",
   homepage = "https://github.com/sveyret/expect-promise",
