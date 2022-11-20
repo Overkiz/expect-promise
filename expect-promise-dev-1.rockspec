@@ -3,11 +3,11 @@ package = "expect-promise"
 version = "dev-1"
 description = {
   summary = "expect package plugin for promises",
-  homepage = "https://github.com/sveyret/expect-promise",
+  homepage = "https://github.com/Overkiz/expect-promise",
   license = "MIT",
 }
 source = {
-  url = "git+https://github.com/sveyret/expect-promise"
+  url = "git+https://github.com/Overkiz/expect-promise"
 }
 dependencies = {
   "expect",
