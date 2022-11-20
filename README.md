@@ -1,6 +1,6 @@
 # Expect-promise - expect package plugin for promises
 
-The package `expect-promise` is a plugin to [expect](https://github.com/sveyret/expect) which adds words used
+The package `expect-promise` is a plugin to [expect](https://github.com/Overkiz/expect) which adds words used
 to manage promises.
 
 # Installation
